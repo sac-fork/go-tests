@@ -7,32 +7,32 @@ import (
 
 func TestSerial(t *testing.T) {
 	t.Run("First", func(t *testing.T) {
-		println("Running First test =====")
+		println("***** Running First test =====")
 		time.Sleep(time.Second)
-		println("===== First test complete")
+		println("===== First test complete *****")
 	})
 
 	t.Run("Second", func(t *testing.T) {
-		println("Running Second test =====")
+		println("***** Running Second test =====")
 		time.Sleep(time.Second)
-		println("===== Second test complete")
+		println("===== Second test complete *****")
 	})
 
 	t.Run("Third", func(t *testing.T) {
-		println("Running Third test =====")
+		println("***** Running Third test =====")
 		time.Sleep(time.Second)
-		println("===== Third test complete")
+		println("===== Third test complete *****")
 	})
 
 	t.Run("Fourth", func(t *testing.T) {
-		println("Running Fourth test =====")
+		println("***** Running Fourth test =====")
 		time.Sleep(time.Second)
-		println("===== Fourth test complete")
+		println("===== Fourth test complete *****")
 	})
 
 	t.Run("Fifth", func(t *testing.T) {
-		println("Running Fifth test =====")
+		println("***** Running Fifth test =====")
 		time.Sleep(time.Second)
-		println("===== Fifth test complete")
+		println("===== Fifth test complete *****")
 	})
 }
