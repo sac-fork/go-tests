@@ -1,11 +1,9 @@
-# go-tests
+# Go tests
 Examples to demonstrate use of go tests with/without parallel flags
+1. Sequential - 5 Tests each having 1S sleep without `t.Parallel()` statements.
+2. Parallel - 5 Tests each having 1S sleep with `t.Parallel()` statements.
 
-## Current test-suite contains two types of go-test files
-1. sequential - 5 Tests each having 1S sleep without `t.Parallel()` statements.
-2. parallel - 5 Tests each having 1S sleep with `t.Parallel()` statements.
-
-### Running tests Without parallel flag (Default parallel flag value is GOMAXPROCS, equals runtime.NumCPU)
+## Running tests without parallel flag (Default parallel flag value is GOMAXPROCS, equals runtime.NumCPU)
 GOMAXPROCS - The GOMAXPROCS variable limits the number of operating system threads that can execute user-level Go code simultaneously
 
 1. Sequential tests
@@ -86,7 +84,7 @@ ok      command-line-arguments  1.131s
 ```
 
 
-### Running tests with parallel flag = 1
+## Running tests with parallel flag = 1
 
 1. Sequential tests
 ```bash
@@ -164,7 +162,7 @@ ok      command-line-arguments  5.160s
 
 ```
 
-### Running tests with parallel flag = 8
+## Running tests with parallel flag = 8
 1. Sequential tests
 ```bash
 go test -v .\sequential_test.go -parallel 8
