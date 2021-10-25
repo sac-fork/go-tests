@@ -4,7 +4,7 @@ Examples to demonstrate use of go tests with/without parallel flags
 2. Parallel - 5 Tests each having 1S sleep with `t.Parallel()` statements.
 
 ## Running tests without parallel flag (Default parallel flag value is GOMAXPROCS, equals runtime.NumCPU)
-GOMAXPROCS - The GOMAXPROCS variable limits the number of operating system threads that can execute user-level Go code simultaneously
+[GOMAXPROCS](https://pkg.go.dev/runtime#GOMAXPROCS) - The GOMAXPROCS variable limits the number of operating system threads that can execute user-level Go code simultaneously
 
 1. Sequential tests
 ```bash
